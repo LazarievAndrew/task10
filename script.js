@@ -1,6 +1,6 @@
-var number = prompt ('Введите число:');
+var number = +prompt ('Введите число:');
 var base = 1;
-var exponent = prompt ('Введите степень числа:');
+var exponent = +prompt ('Введите степень числа:');
 
 // for  //мне такой вариант записи больше всего нравится, коротко и понятно 
 
