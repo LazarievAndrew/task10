@@ -25,9 +25,11 @@ alert ( 'Метод "while" // ' +  'Число ' + number + ' в степени
 
 base = 1; //вернем к начальному значению
 k = exponent;
+m = 1;
 do {
-    base = base * number;
+    base = base * m;
+    m = number;
     k--;
-} while ( k > 0);
+} while ( k + 1 );
 
 alert ( 'Метод "do...while" // ' +  'Число ' + number + ' в степени ' + exponent + ' равно ' + base);
