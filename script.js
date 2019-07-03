@@ -1,11 +1,11 @@
 var number = +prompt ('Введите число:');
-var base = 1;
 var exponent = +prompt ('Введите степень числа:');
+var base = 1;
 
 // for  //мне такой вариант записи больше всего нравится, коротко и понятно 
 
-for (i = exponent; i; i--){    
-    base = base * number;
+for (var i = exponent; i; i--){    
+    base *= number;
 }
 
 alert ('Метод "for" // ' + 'Число ' + number + ' в степени ' + exponent + ' равно ' + base);
@@ -13,9 +13,9 @@ alert ('Метод "for" // ' + 'Число ' + number + ' в степени ' +
 // while
 
 base = 1; //вернем к начальному значению
-j = 0;
+var j = 0;
 while (j < exponent){
-    base = base * number;
+    base *= number;
     j++;
 }
 
@@ -24,10 +24,10 @@ alert ( 'Метод "while" // ' +  'Число ' + number + ' в степени
 // do .. while
 
 base = 1; //вернем к начальному значению
-k = exponent;
-m = 1;
+var k = exponent;
+var m = 1;
 do {
-    base = base * m;
+    base *= m;
     m = number;
     k--;
 } while ( k + 1 );
